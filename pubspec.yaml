@@ -31,7 +31,7 @@ flutter:
     - assets/logos
 
   fonts:
-    - family: poppins
+    - family: Poppins
       fonts:
         - asset: assets\fonts\Poppins-Light.ttf
           weight: 300
