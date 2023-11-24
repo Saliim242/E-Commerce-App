@@ -1,48 +1,47 @@
 import 'package:flutter/material.dart';
+import '../../constants/colors.dart';
+import '../../constants/size.dart';
 
 class TCheckBoxTheme {
   TCheckBoxTheme._();
 
-  static CheckboxThemeData lightCheckBoxTheme = CheckboxThemeData(
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-    checkColor: MaterialStateColor.resolveWith(
-      (states) {
-        if (states.contains(MaterialState.selected)) {
-          return Colors.white;
-        } else {
-          return Colors.black;
-        }
-      },
-    ),
-    fillColor: MaterialStateProperty.resolveWith(
-      (states) {
-        if (states.contains(MaterialState.selected)) {
-          return Colors.blue;
-        } else {
-          return Colors.transparent;
-        }
-      },
-    ),
+  /// Customizable Light Text Theme
+  static CheckboxThemeData lightCheckboxTheme = CheckboxThemeData(
+    shape:
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.xs)),
+    checkColor: MaterialStateProperty.resolveWith((states) {
+      if (states.contains(MaterialState.selected)) {
+        return TColors.white;
+      } else {
+        return TColors.black;
+      }
+    }),
+    fillColor: MaterialStateProperty.resolveWith((states) {
+      if (states.contains(MaterialState.selected)) {
+        return TColors.primary;
+      } else {
+        return Colors.transparent;
+      }
+    }),
   );
-  static CheckboxThemeData darkCheckBoxTheme = CheckboxThemeData(
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-    checkColor: MaterialStateColor.resolveWith(
-      (states) {
-        if (states.contains(MaterialState.selected)) {
-          return Colors.white;
-        } else {
-          return Colors.black;
-        }
-      },
-    ),
-    fillColor: MaterialStateProperty.resolveWith(
-      (states) {
-        if (states.contains(MaterialState.selected)) {
-          return Colors.blue;
-        } else {
-          return Colors.transparent;
-        }
-      },
-    ),
+
+  /// Customizable Dark Text Theme
+  static CheckboxThemeData darkCheckboxTheme = CheckboxThemeData(
+    shape:
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.xs)),
+    checkColor: MaterialStateProperty.resolveWith((states) {
+      if (states.contains(MaterialState.selected)) {
+        return TColors.white;
+      } else {
+        return TColors.black;
+      }
+    }),
+    fillColor: MaterialStateProperty.resolveWith((states) {
+      if (states.contains(MaterialState.selected)) {
+        return TColors.primary;
+      } else {
+        return Colors.transparent;
+      }
+    }),
   );
 }

@@ -12,11 +12,11 @@ class TAppTheme {
     textTheme: TTextTheme.lightTextTheme,
     elevatedButtonTheme: TElevetedButtonTheme.lightElevatedButtonTheme,
     appBarTheme: TAppBarTheme.lightAppBarTheme,
-    bottomSheetTheme: TButtonSheetTheme.lightButtonSheetTheme,
-    checkboxTheme: TCheckBoxTheme.lightCheckBoxTheme,
+    bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
+    checkboxTheme: TCheckBoxTheme.lightCheckboxTheme,
     chipTheme: TChipTheme.lightChipTheme,
-    outlinedButtonTheme: TOutlineButtonTheme.lightOutlineButtomTheme,
-    inputDecorationTheme: TTextFeildTheme.lightInputDecurationTheme,
+    outlinedButtonTheme: TOutlineButtonTheme.lightOutlinedButtonTheme,
+    inputDecorationTheme: TTextFeildTheme.lightInputDecorationTheme,
   );
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
@@ -27,10 +27,10 @@ class TAppTheme {
     textTheme: TTextTheme.darkTextTheme,
     elevatedButtonTheme: TElevetedButtonTheme.darkElevatedButtonTheme,
     appBarTheme: TAppBarTheme.darkAppBarTheme,
-    bottomSheetTheme: TButtonSheetTheme.darkButtonSheetTheme,
-    checkboxTheme: TCheckBoxTheme.darkCheckBoxTheme,
+    bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
+    checkboxTheme: TCheckBoxTheme.darkCheckboxTheme,
     chipTheme: TChipTheme.darkChipTheme,
-    outlinedButtonTheme: TOutlineButtonTheme.darkOutlineButtomTheme,
-    inputDecorationTheme: TTextFeildTheme.darkInputDecurationTheme,
+    outlinedButtonTheme: TOutlineButtonTheme.darkOutlinedButtonTheme,
+    inputDecorationTheme: TTextFeildTheme.darkInputDecorationTheme,
   );
 }
