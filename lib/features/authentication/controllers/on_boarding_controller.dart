@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_projects/features/authentication/screens/auth/login_page.dart';
+import 'package:flutter_projects/features/authentication/screens/login/login_page.dart';
 import 'package:get/get.dart';
 
 class OnBoardingController extends GetxController {

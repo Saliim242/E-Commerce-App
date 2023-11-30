@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_projects/features/authentication/screens/signup/sgn_up_page.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -78,7 +79,9 @@ class TLoginForm extends StatelessWidget {
             SizedBox(
               width: MediaQuery.of(context).size.width,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(() => const SignUpPage());
+                },
                 child: Text(
                   TTextStrings.createAccount,
                 ),
