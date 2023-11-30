@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_projects/features/authentication/screens/auth/login_page.dart';
 import 'package:get/get.dart';
 
 class OnBoardingController extends GetxController {
@@ -28,6 +29,7 @@ class OnBoardingController extends GetxController {
   void nextPage() {
     if (currentPageIndex.value == 2) {
       log('Last Page', name: "Page Controller");
+      Get.offAll(() => LoginPage());
     } else {
       int page = currentPageIndex.value + 1;
 
