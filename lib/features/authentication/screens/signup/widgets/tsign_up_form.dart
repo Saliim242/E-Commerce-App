@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_projects/utils/helpers/helper_function.dart';
+import 'package:flutter_projects/features/authentication/screens/signup/verify_email.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-
-import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/size.dart';
 import '../../../../../utils/constants/text_string.dart';
 import 't_terms_and_conditions.dart';
@@ -14,7 +13,6 @@ class TSignUpForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDarkMode = THelperFunctions.isDarkMode(context);
     return Form(
       child: Column(
         children: [
@@ -84,7 +82,9 @@ class TSignUpForm extends StatelessWidget {
           SizedBox(
             width: MediaQuery.of(context).size.width,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(() => VerifyEmail());
+              },
               child: Text(
                 TTextStrings.createAccount,
               ),

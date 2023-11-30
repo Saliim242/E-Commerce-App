@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_projects/features/authentication/screens/signup/sgn_up_page.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-
-import '../../../../../utils/constants/colors.dart';
-import '../../../../../utils/constants/image_string.dart';
 import '../../../../../utils/constants/size.dart';
 import '../../../../../utils/constants/text_string.dart';
 

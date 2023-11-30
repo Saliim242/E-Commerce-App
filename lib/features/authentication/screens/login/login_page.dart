@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_projects/utils/constants/colors.dart';
-import 'package:flutter_projects/utils/constants/image_string.dart';
 import 'package:flutter_projects/utils/constants/size.dart';
 import 'package:flutter_projects/utils/constants/text_string.dart';
 import 'package:flutter_projects/utils/helpers/helper_function.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 
 import '../../../../common/widgets/login_sign_up.dart/t_form_divider.dart';
 import '../../../../common/widgets/login_sign_up.dart/t_social_media.dart';
