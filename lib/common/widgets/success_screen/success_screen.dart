@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_projects/common/style/specing_style.dart';
-import 'package:flutter_projects/features/authentication/screens/login/login_page.dart';
-import 'package:get/get.dart';
-
-import '../../../utils/constants/image_string.dart';
 import '../../../utils/constants/size.dart';
 import '../../../utils/constants/text_string.dart';
 import '../../../utils/helpers/helper_function.dart';

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_projects/features/authentication/screens/password_configration/forget_password_page.dart';
 import 'package:flutter_projects/features/authentication/screens/signup/sgn_up_page.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -54,7 +55,9 @@ class TLoginForm extends StatelessWidget {
                   ],
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(() => ForgetPasswordPage());
+                  },
                   child: Text(TTextStrings.forgetPassword),
                 ),
               ],
