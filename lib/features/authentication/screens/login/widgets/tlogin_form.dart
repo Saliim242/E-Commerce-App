@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_projects/features/authentication/screens/password_configration/forget_password_page.dart';
 import 'package:flutter_projects/features/authentication/screens/signup/sgn_up_page.dart';
+import 'package:flutter_projects/navigation_menu.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import '../../../../../utils/constants/size.dart';
@@ -68,7 +69,9 @@ class TLoginForm extends StatelessWidget {
             SizedBox(
               width: MediaQuery.of(context).size.width,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(() => NavigationMenu());
+                },
                 child: Text(
                   TTextStrings.signIn,
                 ),
